@@ -1,18 +1,23 @@
-# Extended Edition: LEN Architecture
+สถาปัตยกรรมเครือข่ายและโปรโตคอลการสื่อสาร
+## โครงสร้างการสื่อสารที่ทนทานสำหรับสภาพแวดล้อมที่ผันผวน
 
-### 1. Introduction & Vision
-LEN proposes a resilient distributed communication architecture that maintains capabilities even under unstable network conditions. It transitions networks from Mechanical Infrastructure to a Living Digital Structure.
+### 1. บทนำและบริบทของปัญหา
+โครงสร้างเครือข่ายแบบดั้งเดิมมักตั้งสมมติฐานว่าการเชื่อมต่อต้องเสถียรและมีศูนย์กลางควบคุมเสมอ แต่ในสภาพแวดล้อมที่ซับซ้อนหรือเมื่อเกิดภัยพิบัติ เครือข่ายแบบเดิมมักจะล่มสลาย ระบบนี้จึงเสนอสถาปัตยกรรมแบบกระจายศูนย์ที่ทนทาน ซึ่งผสานเทคโนโลยีเครือข่ายแบบใยแมงมุมและการสื่อสารที่ทนทานต่อความล่าช้าเข้าไว้ด้วยกัน เพื่อให้ระบบยังทำงานได้แม้อยู่ในสภาวะที่ไม่เสถียร
 
-### 2. System Architecture Layers
-* Access Layer: Connects end users, collects traffic, and provides local connectivity.
-* Backbone Layer: Uses a mesh topology providing multiple redundant communication paths across the network.
-* Gateway Layer: Connects the internal network to the external internet and handles data synchronization.
+### 2. โครงสร้างเลเยอร์ของระบบ
+ระบบถูกออกแบบให้แบ่งการทำงานออกเป็นสามเลเยอร์หลักเพื่อเพิ่มความสามารถในการขยายตัวและความน่าเชื่อถือ:
+* เลเยอร์การเข้าถึง: ทำหน้าที่เชื่อมต่อผู้ใช้ ปลายทาง หรือเซนเซอร์ต่างๆ เข้าสู่เครือข่าย เพื่อรวบรวมข้อมูลและส่งต่อไปยังโหนดท้องถิ่น
+* เลเยอร์แกนหลัก: เชื่อมต่อโหนดขนาดใหญ่ด้วยโครงสร้างแบบใยแมงมุม ซึ่งสร้างเส้นทางสื่อสารสำรองหลายเส้นทาง หากโหนดหนึ่งพัง ข้อมูลจะเปลี่ยนไปใช้เส้นทางอื่นทันทีโดยอัตโนมัติ
+* เลเยอร์เกตเวย์: ทำหน้าที่เชื่อมต่อเครือข่ายภายในเข้ากับอินเทอร์เน็ตภายนอก รวมถึงจัดการการซิงโครไนซ์ข้อมูล แม้จุดเชื่อมต่ออินเทอร์เน็ตจะหลุด แต่เครือข่ายภายในก็จะยังคงสื่อสารกันเองได้ตามปกติ
 
-### 3. Multi-Reality Integration & Routing
-LEN supports operations across Physical, Virtual, and Simulation layers. The network features a Self-Adaptive Topology where data transmission routes are dynamically determined using AI inference (Intelligent Routing).
+### 3. กลไกเครือข่ายที่ทนทานต่อความหน่วง 
+เมื่อไม่สามารถการันตีการเชื่อมต่อที่ต่อเนื่องได้ ระบบจึงใช้กลไกแบบจัดเก็บและส่งต่อ โดยแพ็กเกจข้อมูลจะถูกพักไว้ในหน่วยความจำของโหนดชั่วคราวในช่วงที่สัญญาณขาดหายไป โมเดลการเข้าคิวนี้ช่วยรับประกันว่าการที่ลิงก์หลุดชั่วคราวจะไม่ทำให้ข้อมูลสูญหายอย่างถาวร เมื่อสัญญาณกลับมา ข้อมูลจะถูกส่งต่อทันที
 
-### 4. Delay-Tolerant Networking (DTN)
-Because connectivity may not always be available, the network implements a store-and-forward mechanism. Packets are temporarily stored at nodes during link disruptions to ensure no permanent data loss occurs.
+### 4. ฟังก์ชันต้นทุนการหาเส้นทางและการใช้พลังงาน
+การตัดสินใจเลือกเส้นทางส่งข้อมูลไม่ได้ดูแค่ระยะทางที่สั้นที่สุด แต่ระบบจะคำนวณผ่านพารามิเตอร์แบบถ่วงน้ำหนักที่ครอบคลุมทั้ง ความหน่วงของลิงก์ ความล่าช้าของข้อมูล และปริมาณพลังงานที่ต้องใช้ ทำให้โหนดที่ใช้แบตเตอรี่สามารถประหยัดพลังงานได้เมื่อระดับไฟในระบบต่ำลง
 
-### 5. Privacy by Architecture
-Privacy is embedded into the core design using Identity-Bound Encryption and Zero-Visibility controls. This ensures that data and network existence are only visible to directly involved parties.
+### 5. การจัดลำดับความสำคัญของทราฟฟิก
+ข้อมูลในระบบจะถูกแบ่งความสำคัญเป็นสามระดับอย่างเคร่งครัด:
+1. ทราฟฟิกฉุกเฉิน: เช่น สัญญาณเตือนภัยพิบัติและข้อมูลกู้ชีพ จะได้รับแบนด์วิดท์สูงสุดและการันตีการส่งออกเป็นลำดับแรกเสมอ
+2. ทราฟฟิกมาตรวัดระยะไกล: เช่น ข้อมูลเซนเซอร์สภาพอากาศและการเฝ้าระวังสิ่งแวดล้อม เป็นลำดับความสำคัญรองลงมา
+3. ทราฟฟิกทั่วไป: เช่น การใช้งานอินเทอร์เน็ตเบราว์เซอร์ปกติ จะถูกส่งต่อก็ต่อเมื่อมีทรัพยากรเครือข่ายเหลือจากการส่งข้อมูลสองลำดับแรกแล้วเท่านั้น
