@@ -1,16 +1,22 @@
-# The Living Existence Network (LEN): Edition Comparison
+The Living Existence Network
 
-### 1. Introduction
-This document compares the different documentation editions created for the Living Existence Network (LEN) project. Each edition serves a different purpose and audience, providing a comprehensive documentation framework.
+### 1. บทนำ
+เอกสารฉบับนี้จัดทำขึ้นเพื่อเปรียบเทียบและอธิบายความแตกต่างของชุดเอกสารที่ถูกสร้างขึ้นสำหรับโปรเจกต์เครือข่ายนี้ เนื่องจากโครงสร้างของระบบมีความซับซ้อนและเกี่ยวข้องกับทฤษฎีระดับลึก เอกสารแต่ละระดับจึงถูกออกแบบมาเพื่อให้เหมาะสมกับกลุ่มผู้อ่านที่แตกต่างกันอย่างชัดเจน
 
-### 2. Draft Final Edition
-* Purpose: Provide a concise technical report suitable for academic submission.
-* Characteristics: Features a clear technical summary and focuses on the Decentralized Core and Intelligent Routing mechanisms.
+### 2. ฉบับร่างสมบูรณ์ (Architecture Spec)
+* จุดประสงค์: เป็นรายงานทางเทคนิคที่กระชับ เหมาะสำหรับการส่งงานวิชาการ การทำสปริ้นต์ หรือการประเมินสเปกของระบบอย่างรวดเร็ว
+* ลักษณะเด่น: 
+  * ให้คำอธิบายที่กระชับ ตรงประเด็น และเน้นสรุปผลลัพธ์การทดสอบระบบ
+  * มุ่งเน้นไปที่กลไกการกระจายศูนย์ โครงสร้างการส่งข้อมูลอัจฉริยะผ่านปัญญาประดิษฐ์ และสเปกพื้นฐานของสถาปัตยกรรมเครือข่าย
 
-### 3. Extended Educational Edition
-* Purpose: Explain networking concepts and system design in greater detail.
-* Characteristics: Provides a deep dive into Multi-Reality Integration (Physical, Virtual, and Simulation layers) and explains the Zero-Downtime Self-Healing processes.
+### 3. ฉบับขยายเพื่อการศึกษา (Extended Educational Edition)
+* จุดประสงค์: เพื่ออธิบายแนวคิดทางเครือข่าย ทฤษฎีเชิงลึก และการออกแบบระบบในระดับที่ละเอียดมากยิ่งขึ้น เหมาะสำหรับวิศวกรและนักวิจัย
+* ลักษณะเด่น:
+  * อธิบายเจาะลึกถึงเครือข่ายที่เชื่อมต่อความจริงหลายมิติ ทั้งสภาพแวดล้อมทางกายภาพ โลกเสมือน และระบบจำลอง
+  * อธิบายขยายความเกี่ยวกับเบื้องหลังระบบเครือข่ายที่ทนทานต่อความหน่วงและการจัดลำดับความสำคัญของข้อมูล
 
-### 4. Special Edition
-* Purpose: Highlight the conceptual design philosophy behind the architecture.
-* Characteristics: Emphasizes the vision of transitioning to a Living Digital Structure, focusing on simplified explanations and structural privacy.
+### 4. ฉบับพิเศษ (Special Edition)
+* จุดประสงค์: เพื่อนำเสนอปรัชญาและวิสัยทัศน์เบื้องหลังการออกแบบสถาปัตยกรรมนี้ เหมาะสำหรับระดับบริหารหรือการนำเสนอแนวคิดเชิงกลยุทธ์
+* ลักษณะเด่น:
+  * เน้นโครงสร้างที่อธิบายแบบเข้าใจง่าย ไม่ใช้สมการหรือศัพท์เทคนิคที่ซับซ้อนเกินไป
+  * ชูจุดเด่นเรื่องวิสัยทัศน์ของการสร้างโครงสร้างดิจิทัลที่มีชีวิต และความเป็นส่วนตัวที่ฝังรากลึกอยู่ในระดับสถาปัตยกรรม
