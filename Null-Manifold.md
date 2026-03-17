@@ -1,13 +1,16 @@
-# LEN Null Manifold: The Failure State Model
+# โมเดลจำลองสภาวะล้มเหลวและการฟื้นฟู (Null Manifold)
 
-### 1. Concept Introduction
-The Null Manifold concept describes a theoretical state space where network connectivity may degrade without causing permanent communication failure. This model ensures Zero-Downtime Self-Healing.
+### 1. บทนำสู่แนวคิด
+แนวคิดนี้อธิบายถึงพื้นที่สถานะเชิงทฤษฎี ที่แสดงให้เห็นว่าการเชื่อมต่อของเครือข่ายสามารถเสื่อมถอยหรือเสียหายได้ในระดับรุนแรง โดยที่ไม่ทำให้การสื่อสารถูกตัดขาดอย่างถาวร นี่คือกลไกหลักที่อธิบายความทนทานต่อข้อผิดพลาดและทำให้เครือข่ายมีชีวิตรอดได้ในทุกสถานการณ์
 
-### 2. Network State Model
-The network operates in three primary states:
-* Operational State: All communication links function normally (PURE state).
-* Degraded State: Some links fail, but alternative routes remain available through the Self-Adaptive Topology.
-* Disconnected State: External gateway connectivity is lost, but nodes sustain local operations using Autonomous Node Behavior.
+### 2. โมเดลสถานะการทำงานของเครือข่าย
+เครือข่ายถูกออกแบบมาให้ตอบสนองต่อปัญหาโดยการสลับการทำงานระหว่างสามสถานะหลัก:
+* สถานะปฏิบัติการปกติ: ทุกลิงก์และเส้นทางการสื่อสารทำงานอย่างสมบูรณ์แบบ โหลดเครือข่ายสมดุลและมีความหน่วงต่ำสุด
+* สถานะเสื่อมถอย: มีความล้มเหลวเกิดขึ้นบางจุด เช่น โหนดพังหรือลิงก์แกนหลักขาด แต่ระบบยังสามารถหาเส้นทางสำรองเพื่อส่งข้อมูลหลบหลีกจุดที่พังได้อย่างชาญฉลาด
+* สถานะขาดการเชื่อมต่อ: การเชื่อมต่อกับอินเทอร์เน็ตภายนอกถูกตัดขาดโดยสิ้นเชิง หรือโหนดถูกแยกออกไป แต่ระบบเครือข่ายย่อยระดับท้องถิ่นจะใช้พฤติกรรมอัตโนมัติในการประคองระบบให้ยังคงให้บริการภายในพื้นที่ตัวเองต่อไปได้
 
-### 3. Recovery Mechanism
-When connectivity is restored, stored packets are immediately forwarded to their destination. This recovery process ensures that temporary failures do not result in permanent data loss, allowing the network to learn and evolve from the disruption.
+### 3. เงื่อนไขความล้มเหลวที่ระบบรองรับได้
+เครือข่ายถูกออกแบบมาให้ทนทานต่อสถานการณ์ฉุกเฉินหลายรูปแบบพร้อมกัน ไม่ว่าจะเป็น โหนดถ่ายทอดสัญญาณถูกปิด ระบบไฟดับ การกีดขวางสัญญาณทางกายภาพ หรือความแออัดของข้อมูลขั้นรุนแรง ระบบจะสามารถรักษาข้อความที่ตกค้างไว้ได้อย่างปลอดภัย
+
+### 4. กลไกการฟื้นฟูข้อมูลโดยไม่มีดาวน์ไทม์
+จุดเด่นที่สำคัญที่สุดคือ เมื่อการเชื่อมต่อทางกายภาพหรืออินเทอร์เน็ตได้รับการฟื้นฟู แพ็กเกจข้อมูลทั้งหมดที่ถูกกักเก็บไว้ในระบบบัฟเฟอร์จะถูกฟอร์เวิร์ดไปยังปลายทางที่ถูกต้องในทันที กระบวนการนี้รับประกันว่าจะไม่มีข้อมูลสำคัญสูญหายอย่างถาวรจากเหตุขัดข้องชั่วคราว ทำให้เครือข่ายสามารถเรียนรู้และวิวัฒนาการตัวเองจากความล้มเหลวได้
