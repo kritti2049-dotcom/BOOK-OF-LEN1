@@ -1,15 +1,18 @@
-# DAFT Extended Edition: The Living Existence Network (LEN)
-## Dyadic Attention Field Theory as the Living Core
+DAFT: โครงข่ายการดำรงอยู่ที่มีชีวิต (The Living Existence Network)
+## ทฤษฎีสนามความสนใจคู่ขนานในฐานะแกนกลางของระบบ
 
-### 1. Introduction
-The Living Existence Network (LEN) is designed as a "Living Digital Structure" rather than a traditional mechanical infrastructure. It utilizes Dyadic Attention Field Theory (DAFT) to enable Autonomous Node Behavior and intelligent routing.
+### 1. ภาพรวมของระบบ
+The Living Existence Network เป็นสถาปัตยกรรมเครือข่ายแบบกระจายศูนย์ที่ก้าวข้ามโครงสร้างพื้นฐานแบบดั้งเดิมไปสู่ โครงสร้างดิจิทัลที่มีชีวิต ระบบนี้ใช้หลักการทางคณิตศาสตร์จากทฤษฎีสนามความสนใจคู่ขนาน (DAFT) ซึ่งทำงานโดยอาศัยพารามิเตอร์หลักสามตัว ได้แก่ ความแข็งแกร่งของการเชื่อมต่อ ความลึกของความละเอียด และมิติของระบบ มาเป็นกลไกในการควบคุมพฤติกรรมอัตโนมัติของการหาเส้นทาง
 
-### 2. The Four States of Network Existence
-DAFT classifies the relationship between system components into exactly four states:
-* PURE: The system is in an ideal equilibrium state where network load is perfectly distributed.
-* CONSTRUCTIVE: Positive asymmetry where nodes adapt to increased traffic or coherent amplification.
-* DESTRUCTIVE: Negative asymmetry indicating conflicts, congestion, or latency.
-* BOUNDARY: A null state where a node is temporarily isolated to prevent cascading failures.
+### 2. สถานะการดำรงอยู่ของเครือข่าย 4 รูปแบบ
+ทฤษฎีนี้ได้จำแนกความสัมพันธ์ระหว่างองค์ประกอบใดๆ ในเครือข่ายออกเป็นสี่สถานะที่ชัดเจนดังนี้:
+* สถานะสมดุล (PURE): ระบบอยู่ในจุดสมดุลที่สมบูรณ์แบบที่สุด โหลดของเครือข่ายถูกกระจายอย่างลงตัว โดยไม่มีความไม่สมดุลเกิดขึ้นเลย สถานะนี้เปรียบเสมือนเป้าหมายหลักที่เครือข่ายพยายามจะรักษาระดับไว้เสมอ
+* การปรับตัวเชิงบวก (CONSTRUCTIVE): เป็นสถานะที่โหนดมีการปรับตัวเพื่อรองรับปริมาณข้อมูลที่เพิ่มขึ้นอย่างรวดเร็ว โหนดจะทำงานประสานกันเพื่อขยายขีดความสามารถในการส่งข้อมูล
+* สถานะเสื่อมถอย (DESTRUCTIVE): บ่งบอกถึงความขัดแย้งของการหาเส้นทาง ความหน่วงสูง หรือความแออัดของเครือข่าย ซึ่งระบบปัญญาประดิษฐ์จะต้องรีบเข้าแทรกแซงเพื่อหาเส้นทางใหม่
+* สถานะแยกตัว (BOUNDARY): หากโหนดใดเกิดปัญหาถูกโจมตีหรือเสียหาย ระบบจะแยกโหนดนั้นออกชั่วคราวเป็นสถานะว่างเปล่า เพื่อป้องกันไม่ให้ความล้มเหลวลุกลามไปยังส่วนอื่นของเครือข่าย
 
-### 3. Zero-Downtime Self-Healing
-LEN utilizes this mathematical predictability to achieve Zero-Downtime Self-Healing. Any imbalance in the network decays exponentially over time, allowing the system to naturally drift back toward the PURE state without requiring manual intervention or system downtime.
+### 3. การสลายตัวของความไม่สมดุลและการฟื้นฟูตัวเอง
+กฎข้อสำคัญที่สุดของระบบนี้คือ ความไม่สมดุลใดๆ ในเครือข่ายจะสลายตัวและลดลงตามกาลเวลาในรูปแบบเอ็กซ์โพเนนเชียล คุณสมบัติที่คาดเดาได้นี้เองที่ทำให้เกิดกลไกการฟื้นฟูตัวเองโดยไม่ต้องหยุดระบบ เมื่อเกิดปัญหา ระบบจะคำนวณวิถีการสลายตัวและกระจายเวิร์กโหลดใหม่โดยอัตโนมัติ เพื่อดึงสถานะกลับสู่จุดสมดุลอย่างสมบูรณ์แบบโดยที่ผู้ใช้งานไม่รู้สึกถึงรอยต่อ
+
+### 4. การขยายตัวของระบบ
+ความซับซ้อนของระบบจะเติบโตในอัตราที่น้อยกว่าปริมาณข้อมูลที่เพิ่มขึ้น ทำให้การวางแผนโครงสร้างพื้นฐานสามารถทำได้ง่าย และไม่กินทรัพยากรการประมวลผลมากเกินไปแม้เครือข่ายจะขยายตัวระดับโลก
